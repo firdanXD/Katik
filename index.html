@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="assets/icon.png">
+    <title>Katik Firdan</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="typing">
+            <h1>Welcome To Katik</h1>
+            <p>Katik adalah web sederhana yang berfungsi untuk menghitung luas dan keliling bangun datar</p>
+        </div>
+        <ul class="nav">
+            <a id="triangleLink" class="menu-triangle justify-content-center" href="#triangleSection"
+                onClick="triangleLink()">
+                Segitiga
+            </a>
+            <a id="parallelogramLink" class="menu-parallelogram justify-content-center" href="#parallelogramSection"
+                onClick="parallelogramLink()">
+                Jajar Genjang
+            </a>
+        </ul>
+    </header>
+    <!-- segitiga -->
+    <!-- keliling segitiga -->
+    <main>
+        <section id="triangleSection">
+            <div class="cards">
+                <h1>Luas Segitiga</h1>
+                <section class="container1">
+                    <img src="./assets/triangle.png" alt="luas segitiga">
+                    <p>Rumus luas segitiga, yaitu:</p>
+                    <p class="formula">L = 1/2 x a x t</p>
+                    <p>Di mana:</p>
+                    <p>L= Luas</p>
+                    <p>a = Panjang alas</p>
+                    <p>t = Tinggi</p>
+                </section>
+                <!-- input -->
+                <form id="f1">
+                    <hr>
+                    <h2>Hitung Luas Segitiga</h2>
+                    <section class="input">
+                        <input type="number" name="area-triangle1" id="area-triangle1" placeholder="Contoh = 4"
+                            required>
+                        <input type="number" name="area-triangle2" id="area-triangle2" placeholder="Contoh = 10"
+                            required>
+                    </section>
+                    <div id="result2"></div>
+                    <div id="submit2"></div>
+                    <p></p>
+                    <!-- submit & reset -->
+                    <section class="buttons">
+                        <button id="submit-button2" type="submit">Hitung</button>
+                        <button type="reset">Reset</button>
+                    </section>
+                </form>
+            </div>
+            <div class="cards">
+                <h1>Keliling Segitiga</h1>
+                <section class="container1">
+                    <img src="./assets/triangle.png" alt="keliling segitiga">
+                    <section>
+                        <p>Rumus keliling segitiga, yaitu:</p>
+                        <p class="formula">K = S1 + S2 + S3</p>
+                        <p>Di mana:</p>
+                        <p>K= Keliling</p>
+                        <p>S1 = Sisi A</p>
+                        <p>S2 = Sisi B</p>
+                        <p>S3 = Sisi C</p>
+                    </section>
+                </section>
+                <!-- input -->
+                <form id="f2">
+                    <hr>
+                    <h2>Hitung Keliling Segitiga</h2>
+                    <section class="input">
+                        <input type="number" name="perimeter-triangle1" id="perimeter-triangle1"
+                            placeholder="Contoh = 4" required>
+                        <input type="number" name="perimeter-triangle2" id="perimeter-triangle2"
+                            placeholder="Contoh = 10" required>
+                        <input type="number" name="perimeter-triangle3" id="perimeter-triangle3"
+                            placeholder="Contoh = 15" required>
+                    </section>
+
+                    <div id="result1"></div>
+                    <div id="submit1"></div>
+                    <!-- submit & reset -->
+                    <section class="buttons">
+                        <button id="submit-button" type="submit">Hitung</button>
+                        <button type="reset">Reset</button>
+                    </section>
+                </form>
+            </div>
+        </section>
+
+        <section id="parallelogramSection" class="hide">
+            <div class="cards">
+                <h1>Keliling Jajar genjang</h1>
+                <section class="container1">
+                    <img src="./assets/parallelogram.png" alt="keliling jajar genjang">
+                    <p>Rumus keliling jajar genjang, yaitu:</p>
+                    <p class="formula">K = 2(a + b)</p>
+                    <p>Di mana:</p>
+                    <p>K= Keliling</p>
+                    <p>a = Panjang alas</p>
+                    <p>b = Sisi miring</p>
+                </section>
+                <!-- input -->
+                <form id="f3">
+                    <hr>
+                    <h2>Hitung Keliling Jajar Genjang</h2>
+                    <section class="input">
+                        <input type="number" name="perimeter-parallelogram1" id="perimeter-parallelogram1"
+                            placeholder="Contoh = 4" required>
+                        <input type="number" name="perimeter-parallelogram2" id="perimeter-parallelogram2"
+                            placeholder="Contoh = 10" required>
+                    </section>
+                    <div id="result3"></div>
+                    <div id="submit3"></div>
+                    <!-- submit & reset -->
+                    <section class="buttons">
+                        <button id="submit-button3" type="submit">Hitung</button>
+                        <button type="reset">Reset</button>
+                    </section>
+                </form>
+            </div>
+
+            <div class="cards">
+                <h1>Luas Jajar genjang</h1>
+                <section class="container1">
+                    <img src="./assets/parallelogram.png" alt="luas jajar genjang">
+                    <p>Rumus luas jajar genjang, yaitu:</p>
+                    <p class="formula">L = a x t</p>
+                    <p>Di mana:</p>
+                    <p>L= Luas</p>
+                    <p>a = Panjang alas</p>
+                    <p>t = Tinggi</p>
+                </section>
+                <!-- input -->
+                <form id="f4">
+                    <hr>
+                    <h2>Hitung Luas Jajar Genjang</h2>
+                    <section class="input">
+                        <input type="number" name="area-parallelogram1" id="area-parallelogram1"
+                            placeholder="Contoh = 4" required>
+                        <input type="number" name="area-parallelogram2" id="area-parallelogram2"
+                            placeholder="Contoh = 10" required>
+                    </section>
+                    <div id="result4"></div>
+                    <div id="submit4"></div>
+                    <!-- submit & reset -->
+                    <section class="buttons">
+                        <button id="submit-button4" type="submit">Hitung</button>
+                        <button type="reset">Reset</button>
+                    </section>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>Code by &copy; FirdanXD <span><a target="_blank" href="https://github.com/firdanXD">Github</a></span>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
